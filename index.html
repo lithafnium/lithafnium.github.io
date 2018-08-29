@@ -91,12 +91,12 @@
 
     <div class = "row justify-content-center ">
       <ul class = "list-inline" id = "aboutList">
-                <li class = "list-inline-item aboutItem" ><a href = "#">ABOUT  ME</a></li>
-                <li class = "list-inline-item aboutItem" ><a href = "#">SOFTWARE</a></li>
-                <li class = "list-inline-item aboutItem" ><a href = "#">MUSIC</a></li>
+                <li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">ABOUT</a></li>
+                <li class = "list-inline-item aboutItem" ><a href = "#software">SOFTWARE</a></li>
+                <li class = "list-inline-item aboutItem" ><a href = "#music">MUSIC</a></li>
 
                   <li class = "list-inline-item aboutItem" ><a href = "#">CONTACT</a>
-                    <ul class = "list-inline dropdown" >
+                    <ul class = "list-inline dropdown">
                       <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "Images/resume.png" width = "40px" height= "40px"></a>
                       <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 40px; height: 40px"></a>
                       <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 40px; height: 40px" ></a>
@@ -112,6 +112,29 @@
   </div>
 </div>
 </header>
+
+<div class = "container-fluid hidden visuallyHidden vertical-center " id = "about">
+  <div class = "container">
+    
+  
+  <div class = "row justify-content-center ">
+    
+    <div class = "col-md-4 col-sm-12">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    </div>
+
+    <div class = "col-md-4 col-sm-12">
+      <img  src = "images/profile3.jpg" style = "width: 100%"  >
+    </div>
+
+  </div>
+</div>
+
+</div>
+
 
 
 
@@ -467,40 +490,62 @@
 
      }); 
 
-     $("#byso").click(function(){
-      console.log("faculty clicked");
+     var about = $('#about');
+     console.log(about); 
+     $('#aboutOption').on('click', function(){
+        console.log("clicked");
+        if(about.hasClass('hidden')){
+          about.removeClass('hidden'); 
+          setTimeout(function(){
+            about.removeClass('visuallyHidden'); 
+            about.addClass('show');
+
+          }, 2); 
+
+        } else{
+          console.log("no hidden"); 
+          about.addClass('visuallyHidden'); 
+          about.one('transitionend', function(e){
+            about.addClass('hidden');
+
+          }); 
+        }
+     });
+
+    //  $("#byso").click(function(){
+    //   console.log("faculty clicked");
      
 
-      $("#bysoLong").slideToggle("fast", function(){
-      });
-    });
-     $("#cchsBands").click(function(){
-      console.log("faculty clicked");
+    //   $("#bysoLong").slideToggle("fast", function(){
+    //   });
+    // });
+    //  $("#cchsBands").click(function(){
+    //   console.log("faculty clicked");
      
 
-      $("#cchsLong").slideToggle("fast", function(){
-      });
-    });
-     $("#solo").click(function(){
-      console.log("faculty clicked");
+    //   $("#cchsLong").slideToggle("fast", function(){
+    //   });
+    // });
+    //  $("#solo").click(function(){
+    //   console.log("faculty clicked");
      
 
-      $("#soloLong").slideToggle("fast", function(){
-      });
-    });
+    //   $("#soloLong").slideToggle("fast", function(){
+    //   });
+    // });
 
     
 
-     $(function () {
-      $('.scrollto, .gototop').bind('click', function (event) {
-        console.log("a;sdlkjfalksdj"); 
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000, 'easeOutExpo');
-        event.preventDefault();
-      });
-    });
+    //  $(function () {
+    //   $('.scrollto, .gototop').bind('click', function (event) {
+    //     console.log("a;sdlkjfalksdj"); 
+    //     var $anchor = $(this);
+    //     $('html, body').stop().animate({
+    //       scrollTop: $($anchor.attr('href')).offset().top
+    //     }, 1000, 'easeOutExpo');
+    //     event.preventDefault();
+    //   });
+    // });
 
 
 
