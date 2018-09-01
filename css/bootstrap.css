@@ -4560,16 +4560,16 @@ button.list-group-item-dark.active {
 
 .close {
   float: right;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: .5;
+  font-size: 4rem;
+  /*font-weight: bold;*/
+ /* line-height: 1;*/
+  color: white;
+  /*text-shadow: 0 1px 0 #fff;*/
+  /*opacity: .5;*/
 }
 
 .close:focus, .close:hover {
-  color: #000;
+  /*color: #000;*/
   text-decoration: none;
   opacity: .75;
 }

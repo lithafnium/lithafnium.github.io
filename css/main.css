@@ -49,6 +49,8 @@ header:before{
 
 
 }
+
+
 header#top{
 	background: url('../images/music.jpg');	
 	background-size: cover;
@@ -172,7 +174,7 @@ header#top{
 	}
 }
 .title{
-	letter-spacing: 0.3em;
+	/*letter-spacing: 0.3em;*/
 
 	position: relative;
 	vertical-align: middle;
@@ -191,17 +193,17 @@ header#top{
 }
 
 .visuallyHidden{
-	opacity: 0; 
-	transition: opacity 2s linear;
+	opacity: 0 !important; 
+	transition: opacity 0.2s linear;
 }
 
 .show{
-	-webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateY(-100%);  /* IE 9 */
-    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
-    
+	/*-webkit-transform: translateY(-100%);  
+    -ms-transform: translateY(-100%); 
+    transform: translateY(-100%);  
+    */
     opacity: 1 ;
-    transition: visibility  0s, opacity 0.2s linear;
+    transition:  opacity 0.2s linear;
 
 }
 #about{
