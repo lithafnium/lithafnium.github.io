@@ -4559,8 +4559,8 @@ button.list-group-item-dark.active {
 }
 
 .close {
-  float: right;
-  font-size: 4rem;
+  float: left;
+  font-size: 2.5rem;
   /*font-weight: bold;*/
  /* line-height: 1;*/
   color: white;

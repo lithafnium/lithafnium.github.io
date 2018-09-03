@@ -46,7 +46,8 @@
 <!-- Custom Fonts -->
 <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
 <!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+ --><link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
 
 
@@ -69,8 +70,10 @@
     <div class="loader-section section-right"></div>
   </div> -->
 <body>
-
+  <div class = "headerBackground">
+  </div>
   <header id = "top">
+    
     <div class = "vertical-center">
 
     <div class = "container logoheader">
@@ -78,8 +81,8 @@
           <!-- <div class = "col-sm-12 profile animated fadeIn" >
               <img class = "img-thumbnail" src = "images/profile3.jpg"  >
           </div> -->
-          <div class = "col-sm-12 logo animated fadeIn">
-            <h1 class = "title"  style = "font-size: 4em; white-space: pre">S T E V E  L I</h1>
+          <div class = "col-sm-12 logo ">
+            <h1 class = "title"  style = "font-size: 4em; white-space: pre; color: #119da4">S T E V E  L I</h1>
             <!-- <hr class = "headerLine">
 
             <span class = "titledescription" style = "white-space: pre; ">PROGRAMMER   |   MUSICIAN   |   COMPUTER ENTHUSIAST</span> -->
@@ -89,17 +92,18 @@
           </div>
     </div>
 
-    <div class = "row justify-content-center ">
-      <ul class = "list-inline" id = "aboutList">
+    <div class = "row  "><!-- wow animated fadeIn" data-wow-delay = "0.5s" -->
+      <ul class = "list-inline"  id = "aboutList">
                 <li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">ABOUT</a></li>
-                <li class = "list-inline-item aboutItem" ><a href = "#software">SOFTWARE</a></li>
-                <li class = "list-inline-item aboutItem" ><a href = "#music">MUSIC</a></li>
+                <li class = "list-inline-item  specialAbout" id = "softwareLi" ><a href = "#software" id = "softwareOption">SOFTWARE</a></li>
+                <li class = "list-inline-item  specialAbout" id = "musicLi" ><a href = "#music" id = "musicOption">MUSIC</a></li>
 
-                  <li class = "list-inline-item aboutItem" ><a href = "#">CONTACT</a>
+                  <li class = "list-inline-item aboutItem" ><a href = "#" id = "contactOption">CONTACT</a>
                     <ul class = "list-inline dropdown">
                       <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "Images/resume.png" width = "40px" height= "40px"></a>
-                      <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 40px; height: 40px"></a>
-                      <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "#"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 40px; height: 40px" ></a>
+                      <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://github.com/lithafnium"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 35px; height: 35px"></a>
+                      <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://www.linkedin.com/in/steve-li-8a8392125
+"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 35px; height: 35px" ></a>
                     </ul>
                   </li>
                   
@@ -108,9 +112,11 @@
     <!-- <div id = "center" class = "animated fadeIn" data-wow-delay = "0.1s">
       <a class = "arrow scrollto" href="#info">Learn More<span></span></a>
     </div> -->
+    
 
   </div>
 </div>
+
 </header>
 
 <div class = "container-fluid hidden visuallyHidden vertical-center content" id = "about">
@@ -225,6 +231,39 @@
 
       // }); 
     }); 
+    $('#musicOption').mouseenter(function(){
+      $('.headerBackground').css("background", "url('./Images/music.jpg')");
+      $('.headerBackground').css("background-size", " cover"); 
+      $('.headerBackground').css("background-position", "top center"); 
+      $('.headerBackground').css("background-repeat", " no-repeat"); 
+      $('.headerBackground').css("opacity", "1"); 
+      $('#aboutList li').not(document.getElementById("musicLi")).addClass('aboutItemColor'); 
+
+      // $('.aboutItem a').css("color", "white"); 
+      $('.title').css("color", "white"); 
+    });
+
+    $('#musicOption').mouseleave(function(){
+      $('.headerBackground').css("opacity", "0"); 
+      $('.title').css("color", "#119da4"); 
+      $('#aboutList li').removeClass('aboutItemColor');
+    });
+
+    $('#softwareOption').mouseenter(function(){
+      $('.headerBackground').css("background", "url('./Images/programming.jpg')");
+      $('.headerBackground').css("background-size", " cover"); 
+      $('.headerBackground').css("background-position", " center"); 
+      $('.headerBackground').css("background-repeat", " no-repeat"); 
+      $('.headerBackground').css("opacity", "1"); 
+      $('.title').css("color", "white"); 
+      $('#aboutList li').not(document.getElementById("softwareLi")).addClass('aboutItemColor'); 
+    });
+
+    $('#softwareOption').mouseleave(function(){
+      $('.headerBackground').css("opacity", "0"); 
+      $('.title').css("color", "#119da4"); 
+      $('#aboutList li').removeClass('aboutItemColor');
+    });
 
     //  $("#byso").click(function(){
     //   console.log("faculty clicked");
