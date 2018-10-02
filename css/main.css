@@ -20,7 +20,7 @@ body, html{
     	top: 10% !important;
     }
     .title{
-    	font-size: 4em !important;
+    	font-size: 3em !important;
     }
 
     .profile img{
@@ -94,6 +94,7 @@ header{
 	min-height: 100vh;
 	display: flex;
     align-items: center;
+    padding: 2em;
 }
 .logoheader{
 
@@ -257,6 +258,7 @@ header{
 	
 	color: black;
 	font-weight:normal !important;
+	transition: 1s all;
 	
 	/*nimation-name: fadeup;
 	animation-fill-mode:forwards;
@@ -308,7 +310,7 @@ header{
 #softwareContent{
 	position: absolute;
 	top: 0% !important;
-	padding-top: 10% !important;
+	padding-top: 5% !important;
 	padding-bottom: 20% !important;
 }
 
