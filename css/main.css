@@ -180,7 +180,7 @@ body, html{
 	transition: 0.2s;
 }
 #aboutList{
-	list-style-type: none !important;
+	list-style-type: none ;
 }
 .logo {
 	padding: 0px !important;
@@ -308,8 +308,8 @@ body, html{
 
 }
 #about{
-	height: 100%;
-	
+/*	height: 100%;
+*/	
 	position: absolute;
 	padding: 10% !important;
 }
@@ -325,14 +325,15 @@ body, html{
 	border: solid 2px white;
 }
 
-#softwareContent{
+.content{
 	position: absolute;
 	top: 0% !important;
 	padding-top: 5% !important;
 	padding-bottom: 20% !important;
 }
 
-#softwareContent h4{
+
+.content h4{
 	border-bottom: 2px solid white;
 	color: white;
 }
@@ -482,6 +483,28 @@ from{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+.codingRow h5, li{
+	color: white;
+}
+
+.codingRow h5{
+/*	border-bottom: 2px solid white;
+*/
+}
+
+.codingRow ul{
+	list-style-type: circle !important;
+
+}
+
+/*.marginRow{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}*/
+.video{
+	padding: 10px;
+}
 .divLink{
 	position:absolute; 
   width:100%;
@@ -502,6 +525,10 @@ from{
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(19, 80, 91, 0.7); 
+}
+
+#bysoLong{
+	margin-top: 20px;
 }
 #codingPortfolio{
 	margin-top: 70px;
