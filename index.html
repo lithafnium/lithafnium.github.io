@@ -1,686 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Steve Li</title>
-  <script src="https://use.fontawesome.com/7bb233eec0.js"></script>
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/bootstrap-grid.css" rel="stylesheet">
-  <!-- Custom SCS -->
-  
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="icon" href="images/favicon-64.png" type="image/x-icon" >
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="images/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="images/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
-  <link rel="apple-touch-icon" href="images/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="images/favicon-144.png">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-  <!--     <link href="css/mdb.min.css" rel="stylesheet">
-  -->
-  <!-- Custom Fonts -->
-  <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
-  <!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
-<!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
---><link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link href="animate.css" rel = "stylesheet">
 
-
-
-
-
+	<title>Steve Li - CS Student</title>
 </head>
-<div id="loader-wrapper">
-    <div class="sk-cube-grid" id = "loader">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
-      <div class="sk-cube sk-cube3"></div>
-      <div class="sk-cube sk-cube4"></div>
-      <div class="sk-cube sk-cube5"></div>
-      <div class="sk-cube sk-cube6"></div>
-      <div class="sk-cube sk-cube7"></div>
-      <div class="sk-cube sk-cube8"></div>
-      <div class="sk-cube sk-cube9"></div>
-    </div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-  <body>
-    <!-- div class = "headerBackground">
-    </div> -->
-    <div id = "top">
-<!--           
--->
+<body>
+	<div class = "navWrapper">
+		<div id="sideNav" class="sidenav my-auto">
+			<div>
+			  <a onClick = "about()" id = "aboutNav" style = "color: #4285F4" class = "aboutNav" href="#about"><span id = "aboutOption" style = "background-color: #4285F4;"class = "dot"></span>About</a>
+			  <a onClick = "portfolio()" id = "softwareNav" style = "color: #DB4437" class = "softwareNav" href="#portfolio"><span id = "softwareOption" style = "background-color: #DB4437;" class = "dot"></span>Portfolio</a>
+			  <a onClick = "photography()" id = "photographyNav" style = "color: #F4B400" class = "photographyNav" href="#"><span id = "photographyOption" style = "background-color:  #F4B400;" class = "dot"></span>Photography</a>
+			</div>
+		</div>
+	</div>
+
+	<div class = "top">
+		<div class = "vertical-center">
+			<div class = "container" id = "header">
+				<div class = "row">
+					<div class = "col-lg-3 col-md-3 col-sm-3">
+					</div>
+					<div class = "col-lg-6 col-md-6 col-sm-6">
+						<h1 data-aos="fade-up" 
+							data-aos-delay="200" 
+							data-aos-duration="800" 
+							data-aos-anchor-placement="top-center">Steve Li</h1>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-lg-3 col-md-3 col-sm-3">
+					</div>
+					<div data-aos="fade-up" data-aos-delay="400"    data-aos-duration="700" class = "col-lg-9 col-md-9 col-sm-9">
+						<ul class = "list-inline"  id = "aboutList">
+							<li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">About</a></li>
+							<li class = "list-inline-item  aboutItem" id = "softwareLi" ><a href = "#portfolio" id = "softwareOption">Portfolio</a></li>
+							<li class = "list-inline-item  aboutItem" id = "musicLi" ><a href = "#photographyContent" id = "photographyOption">Photography</a></li>
+
+							<li class = "list-inline-item aboutItem" ><a href = "#" id = "contactOption">Contact</a>
+								<ul class = "list-inline dropdown">
+									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "canvaaResume.pdf"><img src = "images/resume.png" width = "40px" height= "40px"></a></li>
+									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://github.com/lithafnium"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 35px; height: 35px"></a></li>
+									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://www.linkedin.com/in/steve-li-8a8392125"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 35px; height: 35px" ></a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id = "about" class = "container margin-bottom">
+		<div class = "row justify-content-center">
+			<div data-aos="fade-right"
+				 data-aos-delay="200" 
+				 data-aos-duration="800" 
+			 class = "col-lg-4 col-md-6 zero-padding">
+				<img class = "img-fluid profile" src = "websitepic-2.jpg">
+			</div>
+			<div data-aos="fade-left"
+				 data-aos-delay="400" 
+				 data-aos-duration="800" 
+
+			 class = "col-lg-4 col-md-6 zero-padding negative-margin ">
+				<div class = "about-content">
+					<h2 style = "color:#4285F4;">About</h2>
+					<p >Born in Carlisle Massachusetts, currently a freshman at Harvard University concentrating in Computer Science. Been programming for 8 years, and taking pictures for 1. </p>
+					<p >
+						Clubs and Activities: Harvard-Radcliffe Orchestra (oboist, media team), Harvard Crimson (photographer), Harvard Yearbook (photographer), Harvard Computer Society, Harvard Datamatch.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id = "portfolio" class = "container margin-bottom">
+		<div class = "row justify-content-center">
+			<div data-aos="fade-up" 
+				data-aos-delay="200" 
+				data-aos-duration="800" class = "col-lg-5 no_padding">
+				<h2 style = "color: #DB4437; margin-bottom: 50px">Things I've Built</h2>
+			</div>
+			<div class = "col-lg-5" style = "margin-left: -80px">
+			</div>
+		</div>
+		<div class = "row  justify-content-center" style = "margin-bottom: 120px">
+			<div class = "col-lg-5 no_padding">
+				<div data-aos="fade-right"
+				 	 data-aos-delay="200" 
+				 	 data-aos-duration="800" class = "styling_image " id = "vitaedev" >
+					<img  src = "images/3205.PNG">
+					<a  style="display: block" href="https://team-3205.github.io/"><span class = "divLink"></span></a>
+					<div  class = "overlay">
+						<h4>TEAM 3205</h4>
+						<p>FULL FRONTEND WEBSITE</p>
+
+					</div>
+				</div>
+			</div>
+			<div data-aos="fade-left"
+				 data-aos-delay="400" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding justify-content-end" style = "text-align: right; margin-left: -80px">
+					<h3>Team 3205</h3>
+					<p class = "projectDesc" >A full frontend website for FIRST robotics team 3205, my high school team that participates in the annual FIRST robotics competition.</p>	
+					<p class = "technologies" >Bootstrap    Javascript</p>
+			</div>
+		</div>
+
+		<div class = "row  justify-content-center" style = "margin-bottom: 120px" >
+			
+			<div data-aos="fade-right"
+				 data-aos-delay="400" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding justify-content-end" style =  "margin-right: -80px; z-index: 10">
+					<h3>Smart Rockets</h3>
+					<p class = "projectDesc" >A "smart" rocket system that trains rockets to reach an intended target using a simulated evolutionary-based genetic algorithm. Adapted from <a href = "https://www.youtube.com/watch?v=bGz7mv2vD6g">Daniel Shiffman.</a></p>	
+					<p class = "technologies" >Processing</p>
+			</div>
+			<div data-aos="fade-left"
+				 data-aos-delay="200" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding">
+				<div class = "styling_image " id = "lce">
+					<img src = "images/smartrockets.PNG">
+					<a  style="display: block" href="http://new.lexingtoncommunityed.org/"><span class = "divLink"></span></a>
+					<div class = "overlay">
+						<h4>LEX COMMUNITY ED</h4>
+						<p>FULL FRONTEND, PHP, MYSQL</p>
+
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<div class = "row  justify-content-center" style = "margin-bottom: 120px">
+			<div class = "col-lg-5 no_padding">
+				<div data-aos="fade-left"
+				 	 data-aos-delay="400" 
+				 	 data-aos-duration="800" class = "styling_image " id = "vitaedev">
+					<img src = "images/ustoo.PNG">
+					<a  style="display: block" href="http://vitaedev.com/"><span class = "divLink"></span></a>
+					<div class = "overlay">
+						<h4>USTOO</h4>
+						<p>FULL FRONTEND WEBSITE, FIREBASE</p>
+
+					</div>
+				</div>
+			</div>
+			<div data-aos="fade-right"
+				 data-aos-delay="200" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding justify-content-end" style = "text-align: right; margin-left: -80px">
+					<h3>ustoo</h3>
+					<p class = "projectDesc" >A web app that allows users to post issues of social justice in order to gain support from other people and eventually contact their local representatives. Created with <a href = "http://www.hugozhang.com/#Home">Hugo Zhang</a> for the MIT Blueprint Hackathon</p>	
+					<p class = "technologies" >Bootstrap    Javascript    Firebase</p>
+			</div>
+		</div>
+
+		<div class = "row  justify-content-center" style = "margin-bottom: 120px" >
+			
+			<div data-aos="fade-right"
+				 data-aos-delay="400" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding justify-content-end" style =  "margin-right: -80px; z-index: 10">
+					<h3>FIRST Robotics</h3>
+					<p class = "projectDesc" >Codebase for my robotics team, 3205, which participated in the FIRST Robotics competition. Utilized computer vision and PID loops.</p>	
+					<p class = "technologies" >Java    OpenCV</p>
+			</div>
+			<div data-aos="fade-left"
+				 data-aos-delay="200" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding">
+				<div class = "styling_image " id = "lce">
+					<img src = "images/frc2.PNG">
+					<a  style="display: block" href="http://new.lexingtoncommunityed.org/"><span class = "divLink"></span></a>
+					<div class = "overlay">
+						<h4>LEX COMMUNITY ED</h4>
+						<p>FULL FRONTEND, PHP, MYSQL</p>
+
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<div class = "row  justify-content-center" style = "margin-bottom: 120px">
+			<div data-aos="fade-right"
+				 data-aos-delay="400" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding">
+				<div class = "styling_image " id = "vitaedev">
+					<img src = "images/rise.PNG">
+					<a  style="display: block" href="http://vitaedev.com/"><span class = "divLink"></span></a>
+					<div class = "overlay">
+						<h4>3D Slicer</h4>
+						<p>PYTHON, PYQT</p>
+
+					</div>
+				</div>
+			</div>
+			<div data-aos="fade-left"
+				 data-aos-delay="200" 
+				 data-aos-duration="800" class = "col-lg-5 no_padding justify-content-end" style = "text-align: right; margin-left: -80px">
+					<h3>3D Slicer</h3>
+					<p class = "projectDesc" >A voice controlled extension for the imaging tool 3D Slicer, an application that displays MRI and CT scans in a 3D viewer for image-guided surgical procedures. Developed in collaboration with Professor Junichi Tokuda during the BU RISE program.</p>	
+					<p class = "technologies" >Python    PyQt    SpeechRecognition</p>
+			</div>
+		</div>
+	</div>
+
+	<div id = "photography" class = "container">
+
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script type = "text/javascript">
+		AOS.init({
+			once: true
+		});
+	</script>
+
+	<script type = "text/javascript">
+		function about(){
+			var about = document.getElementById("aboutNav");
+			var portfolio = document.getElementById("softwareNav"); 
+			var photo = document.getElementById("photographyNav"); 
+			about.classList.add("aboutActive")
+			about.classList.add("active");  
+			portfolio.classList.remove("softwareActive"); 
+			portfolio.classList.remove("active"); 
+			photo.classList.remove("photographyActive"); 
+			photo.classList.remove("active"); 
+		}
+		
+		function portfolio(){
+			var about = document.getElementById("aboutNav");
+			var portfolio = document.getElementById("softwareNav"); 
+			var photo = document.getElementById("photographyNav"); 
+			portfolio.classList.add("softwareActive")
+			portfolio.classList.add("active");  
+			about.classList.remove("aboutActive"); 
+			about.classList.remove("active"); 
+			photo.classList.remove("photographyActive"); 
+			photo.classList.remove("active"); 
+		}
+		
+		function photography(){
+			var about = document.getElementById("aboutNav");
+			var portfolio = document.getElementById("softwareNav"); 
+			var photo = document.getElementById("photographyNav"); 
+			photo.classList.add("photographyActive")
+			photo.classList.add("active");  
+			portfolio.classList.remove("softwareActive"); 
+			portfolio.classList.remove("active"); 
+			about.classList.remove("aboutActive"); 
+			about.classList.remove("active"); 
+		}
+	</script>
+  
 
-
-<div class = "vertical-center">
-
-  <div class = "container logoheader">
-    <div class = "row headerRow">
-          <!-- <div class = "col-sm-12 profile animated fadeIn" >
-              <img class = "img-thumbnail" src = "images/profile3.jpg"  >
-            </div> -->
-            <div class = "col-sm-12 logo ">
-              <h1 class = "title"  style = "font-size: 4em; white-space: pre; color: #119da4">S T E V E  L I</h1>
-            
-
-
-
-            </div>
-          </div>
-
-          <div class = "row  "><!-- wow animated fadeIn" data-wow-delay = "0.5s" -->
-            <ul class = "list-inline"  id = "aboutList">
-              <li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">ABOUT</a></li>
-              <li class = "list-inline-item  specialAbout" id = "softwareLi" ><a href = "#softwareContent" id = "softwareOption">SOFTWARE</a></li>
-              <li class = "list-inline-item  specialAbout" id = "musicLi" ><a href = "#musicContent" id = "musicOption">MUSIC</a></li>
-
-              <li class = "list-inline-item aboutItem" ><a href = "#" id = "contactOption">CONTACT</a>
-                <ul class = "list-inline dropdown">
-                  <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "canvaaResume.pdf"><img src = "images/resume.png" width = "40px" height= "40px"></a>
-                    <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://github.com/lithafnium"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 35px; height: 35px"></a>
-                      <li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://www.linkedin.com/in/steve-li-8a8392125"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 35px; height: 35px" ></a>
-                      </ul>
-                    </li>
-
-                  </ul>
-                </div>
-    <!-- <div id = "center" class = "animated fadeIn" data-wow-delay = "0.1s">
-      <a class = "arrow scrollto" href="#info">Learn More<span></span></a>
-    </div> -->
-    
-
-  </div>
-</div>
-
-</div>
-<div id = "particles-js"></div>
-
-
-<div class = "container-fluid hidden visuallyHidden vertical-center " id = "about">
-
-  <div class = "container">
-
-
-    <div class = "row justify-content-end">
-      <div class = "col-md-1 col-sm-1 offset-md-1">
-        <button type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-
-    <div class = "row justify-content-center ">
-
-      <div class = "col-lg-4 col-md-12 col-sm-12">
-        <p>
-          I am a teenage web developer and musician who loves to create new and interesting creations. I've been coding for several years now, with experience in Java, C, Python, HTML/CSS, JS, and Qt. I love to experiment and explore my intellectual curiosity, creating several websites for community organizations.<br> <br>On the side, I'm an oboist, a drummer, and a tennis player,playing the oboe for 10 years and the drums for 5. I also participate in several school activities, such as the robotics team, band, and math team. 
-        </p>
-
-      </div>
-
-      <div class = "col-lg-4 col-md-12 col-sm-12">
-
-        <img  src = "images/profile4.jpg" style = "width: 100%"  >
-
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-</div>
-<div class = "container-fluid hidden  visuallyHidden  content" id = "softwareContent">
-
-  <div class = "container">
-    <div class = "row justify-content-end">
-      <div class = "col-md-1 col-sm-1 offset-md-1">
-        <button type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-    <div class = "row codingRow">
-      <h4>W E B S I T E S</h4>
-
-
-      
-    </div>
-    <div class = "row  " >
-
-      <div class = "col-lg-3 no_padding">
-        <div class = "styling_image " id = "vitaedev">
-          <img src = "images/vitaedev2.PNG">
-          <a  style="display: block" href="http://vitaedev.com/"><span class = "divLink"></span></a>
-          <div class = "overlay">
-            <h4>VITAEDEV</h4>
-            <p>FULL FRONTEND WEBSITE</p>
-
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-3 no_padding">
-        <div class = "styling_image " id = "lce">
-          <img src = "images/lce.PNG">
-          <a  style="display: block" href="http://new.lexingtoncommunityed.org/"><span class = "divLink"></span></a>
-          <div class = "overlay">
-            <h4>LEX COMMUNITY ED</h4>
-            <p>FULL FRONTEND + PHP + MYSQL</p>
-
-          </div>
-        </div>
-      </div>
-      <div class = "col-lg-3 no_padding ">
-        <div class = "styling_image " id = "team3205">
-          <img src = "images/3205.PNG">
-          <a  style="display: block" href="www.team3205.org"><span class = "divLink"></span></a>
-          <div class = "overlay">
-           <h4>TEAM 3205 WEBSITE</h4>
-           <p>FULL FRONTEND WEBSITE</p>
-
-         </div>
-       </div>
-     </div>
-
-
-   </div>
-
-   <div class = "row codingRow">
-
-
-
-    <h4>P R O J E C T S</h4>
-    
-  </div>
-
-  <div class = "row  " >
-
-    <div class = "col-lg-3 no_padding">
-      <div class = "styling_image " id = "vitaedev">
-        <img src = "images/DSC_0597.jpg">
-        <a  style="display: block" href="https://github.com/Team-3205/First-Steamworks"><span class = "divLink"></span></a>
-        <div class = "overlay">
-          <h4>FIRST STEAMWORKS</h4>
-          <p>JAVA BASED ROBOT</p>
-
-        </div>
-      </div>
-    </div>
-    <div class = "col-lg-3 no_padding">
-      <div class = "styling_image " id = "lce">
-        <img src = "images/frc2.PNG">
-        <a  style="display: block" href="https://github.com/Team-3205/First-Stronghold"><span class = "divLink"></span></a>
-        <div class = "overlay">
-          <h4>FIRST STRONGHOLD</h4>
-          <p>JAVA BASED ROBOT</p>
-
-        </div>
-      </div>
-    </div>
-    <div class = "col-lg-3 no_padding ">
-      <div class = "styling_image " id = "team3205">
-        <img src = "images/smartrockets.PNG">
-        <a  style="display: block" href="https://github.com/lithafnium/Smart_Rockets"><span class = "divLink"><span class = "divLink"></span></a>
-        <div class = "overlay">
-         <h4>SMART ROCKETS</h4>
-         <p>PROCESSING</p>
-
-       </div>
-     </div>
-   </div>
-
-
- </div>
-
- <div class = "row  " >
-
-  <div class = "col-lg-3 no_padding">
-    <div class = "styling_image " id = "vitaedev">
-      <img src = "images/rise.PNG">
-      <a  style="display: block" href="https://github.com/lithafnium/3DSlicer-Voice"><span class = "divLink"></span></a>
-      <div class = "overlay">
-        <h4>3D SLICER VOICE</h4>
-        <p>PYTHON VOICE-CONTROL</p>
-
-      </div>
-    </div>
-  </div>
-
-
-
-</div>
-
-
-
-
-
-
-
-</div>
-
-</div>
-</div>
-
-
-<div class = "container-fluid hidden  visuallyHidden  content" id = "musicContent">
-  <div class = "container">
-    <div class = "row justify-content-end">
-      <div class = "col-md-1 col-sm-1 offset-md-1">
-        <button type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-    <div class = "row ">
-      <h4>BOSTON YOUTH SYMPHONY ORCHESTRAS</h4>
-
-
-      
-    </div>
-    <div class = "row codingRow " >
-
-      <div class = "col-lg-7 col-md-12 col-sm-12" id = "bysoLong">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" id = "orchestra">
-              <img class="d-block w-100 img-fluid" src="images/orchestra2.jpg" alt="First slide">
-            </div>
-
-            <div class="carousel-item" id = "orchestra2">
-              <img class="d-block w-100 img-fluid" src="images/byso.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item" id = "iqhfest">
-              <img class="d-block w-100 img-fluid" src="images/byso2.jpg" alt="Fourth slide">
-            </div>
-            <div class="carousel-item" id = "iqhfest">
-              <img class="d-block w-100 img-fluid" src="images/byso3.jpg" alt="Fourth slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class = "col-lg-5 col-md-12 col-sm-12" id = "bysoLong">
-        <h5>ABOUT</h5>
-        <ul>
-          <li>Member of the Boston Youth Symphony, one of Boston's premier youth orchestras and part of the 
-            <a href = "https://www.bysoweb.org/">Boston Youth Symphony Orchestras</a> organization. </li>
-
-            <li>Accepted into the Boston Youth Symphony in 2014, being one of the youngest oboe players to be accepted (age 13).</li>
-
-          </ul>
-
-          <h5>EXPERIENCE</h5>
-          <ul>
-            <li>7 years experience playing full symphonic pieces as well as chamber orchestra pieces. </li>
-            <li>Played a full range of symphonic pieces including but not limited to: Rite of Spring, Dvorak's 9th Symphony "From the New World," Ein Heldenleben, Shostakovich's 11th Symphony "The year 1907," and Jeux by Debussy.</li>
-
-            <li>Every year the Boston Youth Symphony puts on a semi-staged opera, being the only youth orchestra in the nation to do so.</li>
-            <li>Opera experience includes: 
-
-              "Un Ballo en Maschera" and "Otello" by Verdi, "La Cenerentola" by Rossini, "Eugene Onegin" by Tchaikovsky, and "Carmen" by Bizet.  
-            </li>
-
-          </div>
-        </div>
-
-        <div class = "row ">
-          <h4>CCHS BANDS </h4>
-
-        </div>
-
-        <div class = "row codingRow " >
-          <div class = "col-lg-5 cardLong" id = "bysoLong">
-            <h5>MEMBERSHIP</h5>
-            <ul>
-              <li>Member of the concert and jazz bands </li>
-              <li>Received gold medals in MICCA festivals</li>
-
-              <li>Participated in the <a href = "http://www.musicforall.org/what-we-do/mfa-national-festival">Music for All National Festival</a> in Indianapolis in 2014</li>
-
-            </ul>
-
-            <h5>DISTRICTS AND ALL STATES</h5>
-            <ul>
-              <li>First chair in band for the Massachusetts Eastern District 2015 and 2016</li>
-              <li>First chair in orchestra for the Massachusetts All State Festival 2015 and 2016</li>
-
-              <li>First chair in orchestra fro the NAfME All-National Orchestra 2017</li>
-
-            </ul>
-
-          </div>
-          <div class = "col-lg-7 col-md-12 col-sm-12" id = "bysoLong">
-            <img class = "img-fluid" src = "images/concertband.jpg">
-
-          </div>
-        </div>
-        <div class = "row ">
-          <h4>SOLO AND ENSEMBLE WORK </h4>
-
-        </div>
-
-        <div class = "col-md-12 cardLong" id = "bysoLong">
-
-        <div class = "row marginRow">
-               <div class = "col-lg-4 video">
-                    <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                          <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/NJQYvL6J7t4" frameborder="0" allowfullscreen></iframe>
-                        </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-
-                        <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                      <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/rPKEJ2lc1aA" frameborder="0" allowfullscreen></iframe>
-                        </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-                      <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                          <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/IP7AE7R4Y-U" frameborder="0" allowfullsczreen></iframe>
-                      </div>
-
-               </div>
-          </div>
-          <div class = "row marginRow">
-               <div class = "col-lg-4 video">
-                  <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                  <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/-ZEumOQyKHk" frameborder="0" allowfullscreen></iframe>
-                      </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-                    <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                      <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/8ZM9wDIKq7Q" frameborder="0" allowfullscreen></iframe>
-                      </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-                    <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                  <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/oNNkqR90rkE" frameborder="0" allowfullscreen></iframe>
-                      </div>
-
-               </div>
-          </div>
-
-          <div class = "row marginRow">
-               <div class = "col-lg-4 video">
-                  <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                  <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/LyYSfuCcUhQ" frameborder="0" allowfullscreen></iframe>
-                      </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-                    <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                      <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/VJW3Dy1EEv8" frameborder="0" allowfullscreen></iframe>
-                      </div>
-               </div>
-
-                <div class = "col-lg-4 video">
-                    <div class = "vidoWrapper embed-responsive embed-responsive-16by9 ">
-                  <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/7uID3m13C7U" frameborder="0" allowfullscreen></iframe>
-                      </div>
-
-               </div>
-          </div>
-
-          
-      </div>
-
-      </div>
-
-
-       
-
-    </div>
-
-
-
-
-
-<!-- 
-<footer id = "footer" class = "wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;"">
-  <h2>CONTACT</h2>
-  <a href = "#lithafnium2000@gmail.com">lithafnium2000@gmail.com</a>
-
-  <a class="btn btn-info" href="resume.pdf" role="button">RESUME</a> -->
-
-
-
-<!-- </footer>
-
-<footer id = "footer2">
-    <p style = "white-space: pre; "><a href = "https://github.com/lithafnium"><img id = "github" class = "imageLink" src = "GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" style = "width: 55px; height: 55px" ></a>       <a href = "https://www.linkedin.com/in/steve-li-8a8392125/"><img id = "linkedin" class = "imageLink" src = "linkedin_logo_package/LinkedIn [in]/Screen/White/linkedin.png" style = "width: 55px; height: 55px" ></a></p>
-
-
-
-  </footer>  -->
-
-  <script src = "js/particles.js-master/particles.js"></script>
-  <script src = "js/app.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src = "js/easing.js"></script>
-
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!--ANIMATIONS ON SCROLL -->
-  <script type="text/javascript">
-    new WOW().init();
-  </script>
-
-  <script>
-
-   $(document).ready(function() {
-    setTimeout(function(){
-      $('body').addClass('loaded');
-
-    }, 4000);
-
-  }); 
-
-   var about = $('#about');
-   var software = $('#softwareContent');
-   var music = $('#musicContent'); 
-   $('#aboutOption').on('click', function(){
-    console.log("clicked");
-    if(about.hasClass('hidden')){
-      console.log("showing");
-      about.removeClass('hidden'); 
-      setTimeout(function(){
-        // $('header').addClass('headerBackgroundColor');
-
-        about.addClass('show');
-        about.removeClass('visuallyHidden'); 
-
-
-      }, 20); 
-
-    } else{
-      console.log("no hidden"); 
-
-    }
-  });
-
-   $('#softwareOption').on('click', function(){
-    console.log("clicked");
-    if(software.hasClass('hidden')){
-
-      console.log("showing");
-      software.removeClass('hidden'); 
-      setTimeout(function(){
-        // $('header').addClass('headerBackgroundColor');
-
-        software.addClass('show');
-
-        software.removeClass('visuallyHidden'); 
-
-
-      }, 20); 
-
-    } else{
-      console.log("no hidden"); 
-
-    }
-  });
-
-   $('#musicOption').on('click', function(){
-    console.log("music clicked");
-    if(music.hasClass('hidden')){
-
-      console.log("showing");
-      music.removeClass('hidden'); 
-      setTimeout(function(){
-        // $('header').addClass('headerBackgroundColor');
-
-        music.addClass('show');
-
-        music.removeClass('visuallyHidden'); 
-
-
-      }, 20); 
-
-    } else{
-      console.log("no hidden"); 
-
-    }
-  });
-
-   $('.close').on('click', function(){
-    console.log("closing"); 
-      // about.removeClass('show'); 
-      about.addClass('visuallyHidden'); 
-      software.addClass('visuallyHidden');
-      music.addClass('visuallyHidden');
-
-      
-      setTimeout(function(){
-        about.addClass('hidden');
-        software.addClass('hidden');
-        music.addClass('hidden'); 
-        $('header').removeClass('headerBackgroundColor');
-
-      }, 100);
-      // about.one('transitionend', function(e){
-      //     console.log("hide"); 
-      //     about.addClass('hidden'); 
-
-      // }); 
-    }); 
-   $('.list-inline-item').mouseenter(function(){
-    // $('.headerBackground').css("background", "url('./Images/music.jpg')");
-    // $('.headerBackground').css("background-size", " cover"); 
-    // $('.headerBackground').css("background-position", "top center"); 
-    // $('.headerBackground').css("background-repeat", " no-repeat"); 
-    // $('.headerBackground').css("opacity", "1"); 
-
-    $('#aboutList li').not(this).addClass('aboutItemColor'); 
-      // $('.aboutItem a').css("color", "white"); 
-      $('.title').css("color", "white"); 
-    });
-
-   $('.list-inline-item').mouseleave(function(){
-    $('.headerBackground').css("opacity", "0"); 
-    $('.title').css("color", "#119da4"); 
-    $('#aboutList li').removeClass('aboutItemColor');
-  });
-
-
-  //  $('#softwareOption').mouseenter(function(){
-  //   $('.headerBackground').css("background", "url('./Images/programming.jpg')");
-  //   $('.headerBackground').css("background-size", " cover"); 
-  //   $('.headerBackground').css("background-position", " center right"); 
-  //   $('.headerBackground').css("background-repeat", " no-repeat"); 
-  //   $('.headerBackground').css("opacity", "1"); 
-  //   $('.title').css("color", "white"); 
-  //   $('#aboutList li').not(document.getElementById("softwareLi")).addClass('aboutItemColor'); 
-  // });
-
-  //  $('#softwareOption').mouseleave(function(){
-  //   $('.headerBackground').css("opacity", "0"); 
-  //   $('.title').css("color", "#119da4"); 
-  //   $('#aboutList li').removeClass('aboutItemColor');
-  // });
-
-  //  $('#softwareOption').click(function(){
-  //  });
-
-    //  $("#byso").click(function(){
-    //   console.log("faculty clicked");
-
-
-    //   $("#bysoLong").slideToggle("fast", function(){
-    //   });
-    // });
-    //  $("#cchsBands").click(function(){
-    //   console.log("faculty clicked");
-
-
-    //   $("#cchsLong").slideToggle("fast", function(){
-    //   });
-    // });
-    //  $("#solo").click(function(){
-    //   console.log("faculty clicked");
-
-
-    //   $("#soloLong").slideToggle("fast", function(){
-    //   });
-    // });
-
-    
-
-    //  $(function () {
-    //   $('.scrollto, .gototop').bind('click', function (event) {
-    //     console.log("a;sdlkjfalksdj"); 
-    //     var $anchor = $(this);
-    //     $('html, body').stop().animate({
-    //       scrollTop: $($anchor.attr('href')).offset().top
-    //     }, 1000, 'easeOutExpo');
-    //     event.preventDefault();
-    //   });
-    // });
-
-
-
-
-  </script>
 </body>
 </html>
