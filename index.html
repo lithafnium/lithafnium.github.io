@@ -14,6 +14,32 @@
 	<link href="main.css" rel="stylesheet">
 	<link href="animate.css" rel = "stylesheet">
 
+	<link rel="icon" href="images/favicon-64.png" type="image/x-icon" >
+
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="images/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="images/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+ 	<link rel="apple-touch-icon" href="images/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="images/favicon-144.png">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<script src="https://kit.fontawesome.com/b7d5dd60b8.js" crossorigin="anonymous"></script>
+
+
 	<title>Steve Li - CS Student</title>
 </head>
 <body>
@@ -23,6 +49,7 @@
 			  <a onClick = "about()" id = "aboutNav" style = "color: #4285F4" class = "aboutNav" href="#about"><span id = "aboutOption" style = "background-color: #4285F4;"class = "dot"></span>About</a>
 			  <a onClick = "portfolio()" id = "softwareNav" style = "color: #DB4437" class = "softwareNav" href="#portfolio"><span id = "softwareOption" style = "background-color: #DB4437;" class = "dot"></span>Portfolio</a>
 			  <a onClick = "photography()" id = "photographyNav" style = "color: #F4B400" class = "photographyNav" href="#"><span id = "photographyOption" style = "background-color:  #F4B400;" class = "dot"></span>Photography</a>
+			  <a onClick = "contact()" id = "contactNav" style = "color: #0F9D58;" class = "contactNav" href="#contact"><span id = "photographyOption" style = "background-color:  #0F9D58;" class = "dot"></span>Contact</a>
 			</div>
 		</div>
 	</div>
@@ -49,12 +76,8 @@
 							<li class = "list-inline-item  aboutItem" id = "softwareLi" ><a href = "#portfolio" id = "softwareOption">Portfolio</a></li>
 							<li class = "list-inline-item  aboutItem" id = "musicLi" ><a href = "#photographyContent" id = "photographyOption">Photography</a></li>
 
-							<li class = "list-inline-item aboutItem" ><a href = "#" id = "contactOption">Contact</a>
-								<ul class = "list-inline dropdown">
-									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "canvaaResume.pdf"><img src = "images/resume.png" width = "40px" height= "40px"></a></li>
-									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://github.com/lithafnium"><img src = "GitHub-Mark/PNG/GitHub-Mark-64px.png" style = "width: 35px; height: 35px"></a></li>
-									<li class = "list-inline-item contactDropdownItem"><a class = "dropdownLink" href = "https://www.linkedin.com/in/steve-li-8a8392125"><img src = "linkedin_logo_package/LinkedIn [in]/Screen/2-Color/In-2C-75px-R.png" style = "width: 35px; height: 35px" ></a></li>
-								</ul>
+							<li class = "list-inline-item aboutItem" ><a href = "#contact" id = "contactOption">Contact</a>
+								
 							</li>
 
 						</ul>
@@ -70,20 +93,21 @@
 			<div data-aos="fade-right"
 				 data-aos-delay="200" 
 				 data-aos-duration="800" 
-			 class = "col-lg-4 col-md-6 zero-padding">
+			 class = "col-lg-4 col-md-6 col-sm-6 zero-padding">
 				<img class = "img-fluid profile" src = "websitepic-2.jpg">
 			</div>
 			<div data-aos="fade-left"
 				 data-aos-delay="400" 
 				 data-aos-duration="800" 
 
-			 class = "col-lg-4 col-md-6 zero-padding negative-margin ">
+			 class = "col-lg-5 col-md-6 col-sm-6 zero-padding negative-margin ">
 				<div class = "about-content">
 					<h2 style = "color:#4285F4;">About</h2>
 					<p >Born in Carlisle Massachusetts, currently a freshman at Harvard University concentrating in Computer Science. Been programming for 8 years, and taking pictures for 1. </p>
 					<p >
 						Clubs and Activities: Harvard-Radcliffe Orchestra (oboist, media team), Harvard Crimson (photographer), Harvard Yearbook (photographer), Harvard Computer Society, Harvard Datamatch.
 					</p>
+					<a href = "Steve Li Resume.pdf"><button style = "border-radius: 2px; display: inline" type="button" class="btn btn-primary">Resume</button></a>
 				</div>
 			</div>
 		</div>
@@ -136,10 +160,10 @@
 				 data-aos-duration="800" class = "col-lg-5 no_padding">
 				<div class = "styling_image " id = "lce">
 					<img src = "images/smartrockets.PNG">
-					<a  style="display: block" href="http://new.lexingtoncommunityed.org/"><span class = "divLink"></span></a>
+					<a  style="display: block" href="https://github.com/lithafnium/Smart_Rockets/"><span class = "divLink"></span></a>
 					<div class = "overlay">
-						<h4>LEX COMMUNITY ED</h4>
-						<p>FULL FRONTEND, PHP, MYSQL</p>
+						<h4>SMART ROCKETS</h4>
+						<p>PROCESSING</p>
 
 					</div>
 				</div>
@@ -152,7 +176,7 @@
 				 	 data-aos-delay="400" 
 				 	 data-aos-duration="800" class = "styling_image " id = "vitaedev">
 					<img src = "images/ustoo.PNG">
-					<a  style="display: block" href="http://vitaedev.com/"><span class = "divLink"></span></a>
+					<a  style="display: block" href="https://github.com/lithafnium/Ustoo"><span class = "divLink"></span></a>
 					<div class = "overlay">
 						<h4>USTOO</h4>
 						<p>FULL FRONTEND WEBSITE, FIREBASE</p>
@@ -183,10 +207,10 @@
 				 data-aos-duration="800" class = "col-lg-5 no_padding">
 				<div class = "styling_image " id = "lce">
 					<img src = "images/frc2.PNG">
-					<a  style="display: block" href="http://new.lexingtoncommunityed.org/"><span class = "divLink"></span></a>
+					<a  style="display: block" href="https://github.com/Team-3205"><span class = "divLink"></span></a>
 					<div class = "overlay">
-						<h4>LEX COMMUNITY ED</h4>
-						<p>FULL FRONTEND, PHP, MYSQL</p>
+						<h4>FIRST ROBOTICS</h4>
+						<p>COMPUTER VISION, PID LOOPS, SENSOR INPUT</p>
 
 					</div>
 				</div>
@@ -199,7 +223,7 @@
 				 data-aos-duration="800" class = "col-lg-5 no_padding">
 				<div class = "styling_image " id = "vitaedev">
 					<img src = "images/rise.PNG">
-					<a  style="display: block" href="http://vitaedev.com/"><span class = "divLink"></span></a>
+					<a  style="display: block" href="https://github.com/lithafnium/3DSlicer-Voice"><span class = "divLink"></span></a>
 					<div class = "overlay">
 						<h4>3D Slicer</h4>
 						<p>PYTHON, PYQT</p>
@@ -221,13 +245,40 @@
 
 	</div>
 
+	<div id = "contact" class = "container">
+		
+
+		<div data-aos="fade-up" 
+			data-aos-delay="200" 
+			data-aos-duration="800" 
+			data-aos-anchor-placement="top-center" class = "row ">
+			<div class = "col-lg-2 col-md-2 col-sm-2"></div>
+			<div class = "col-lg-8 col-md-8 col-sm-8 contactCard">
+				<h2 style = "color:#0F9D58; margin-bottom: 30px">Get in Touch</h2>
+
+				<p>I'm always looking for freelance opportunities or cool potential projects to work on, so feel free to reach out! Whether it's for an idea or just to say hi, I'll try my best to answer your email! </p>	
+				<div style = "width: 100%">
+				<a href = "mailto:steveli@college.harvard.edu"><button style = "border-radius: 2px; display: inline" type="button" class="btn btn-success">Reach Out</button></a>
+				<p style = "float: right; display: inline">
+					<a href = "https://www.linkedin.com/in/steveshenli/"><i class="icon fab fa-linkedin fa-fw"></i></a>
+					<a href = "Steve Li Resume.pdf"><i class="icon fas fa-sticky-note"></i></a>
+					<a href = "https://github.com/lithafnium"><i class="icon fab fa-github-square fa-fw"></i></a>
+				</p>
+
+				</div>
+			</div>
+			<div class = "col-lg-2 col-md-2 col-sm-2"></div>	
+
+		</div>
+		
+	</div>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 	<script type = "text/javascript">
 		AOS.init({
 			once: true
@@ -239,36 +290,65 @@
 			var about = document.getElementById("aboutNav");
 			var portfolio = document.getElementById("softwareNav"); 
 			var photo = document.getElementById("photographyNav"); 
+			var contact = document.getElementById("contactNav");
+
 			about.classList.add("aboutActive")
 			about.classList.add("active");  
 			portfolio.classList.remove("softwareActive"); 
 			portfolio.classList.remove("active"); 
 			photo.classList.remove("photographyActive"); 
 			photo.classList.remove("active"); 
+			contact.classList.remove("contactActive"); 
+			contact.classList.remove("active"); 
 		}
 		
 		function portfolio(){
 			var about = document.getElementById("aboutNav");
 			var portfolio = document.getElementById("softwareNav"); 
 			var photo = document.getElementById("photographyNav"); 
+			var contact = document.getElementById("contactNav");
+
 			portfolio.classList.add("softwareActive")
 			portfolio.classList.add("active");  
 			about.classList.remove("aboutActive"); 
 			about.classList.remove("active"); 
 			photo.classList.remove("photographyActive"); 
 			photo.classList.remove("active"); 
+			contact.classList.remove("contactActive"); 
+			contact.classList.remove("active"); 
 		}
 		
 		function photography(){
 			var about = document.getElementById("aboutNav");
 			var portfolio = document.getElementById("softwareNav"); 
 			var photo = document.getElementById("photographyNav"); 
+			var contact = document.getElementById("contactNav");
+
 			photo.classList.add("photographyActive")
 			photo.classList.add("active");  
 			portfolio.classList.remove("softwareActive"); 
 			portfolio.classList.remove("active"); 
 			about.classList.remove("aboutActive"); 
 			about.classList.remove("active"); 
+			contact.classList.remove("contactActive"); 
+			contact.classList.remove("active"); 
+		}
+
+		function contact(){
+			var about = document.getElementById("aboutNav");
+			var portfolio = document.getElementById("softwareNav"); 
+			var photo = document.getElementById("photographyNav"); 
+			var contact = document.getElementById("contactNav");
+
+			photo.classList.remove("photographyActive")
+			photo.classList.remove("active");  
+			portfolio.classList.remove("softwareActive"); 
+			portfolio.classList.remove("active"); 
+			about.classList.remove("aboutActive"); 
+			about.classList.remove("active"); 
+			contact.classList.add("contactActive"); 
+			contact.classList.add("active"); 
+
 		}
 	</script>
   
