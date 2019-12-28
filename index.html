@@ -52,6 +52,13 @@
 			  <a onClick = "contact()" id = "contactNav" style = "color: #0F9D58;" class = "contactNav" href="#contact"><span id = "photographyOption" style = "background-color:  #0F9D58;" class = "dot"></span>Contact</a>
 			</div>
 		</div>
+		<div id = "menu" class = "navsign my-auto">
+			<div class = "hamburger">
+				<p class = "bar"></p>
+				<p class = "bar"></p>
+				<p class = "bar"></p>
+			</div>
+		</div>
 	</div>
 
 	<div class = "top">
@@ -64,7 +71,7 @@
 						<h1 data-aos="fade-up" 
 							data-aos-delay="200" 
 							data-aos-duration="800" 
-							data-aos-anchor-placement="top-center">Steve Li</h1>
+							data-aos-anchor-placement="top-center">steve li</h1>
 					</div>
 				</div>
 				<div class = "row">
@@ -72,11 +79,11 @@
 					</div>
 					<div data-aos="fade-up" data-aos-delay="400"    data-aos-duration="700" class = "col-lg-9 col-md-9 col-sm-9">
 						<ul class = "list-inline"  id = "aboutList">
-							<li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">About</a></li>
-							<li class = "list-inline-item  aboutItem" id = "softwareLi" ><a href = "#portfolio" id = "softwareOption">Portfolio</a></li>
-							<li class = "list-inline-item  aboutItem" id = "musicLi" ><a href = "#photographyContent" id = "photographyOption">Photography</a></li>
+							<li class = "list-inline-item aboutItem" ><a href = "#about" id = "aboutOption">about</a></li>
+							<li class = "list-inline-item  aboutItem" id = "softwareLi" ><a href = "#portfolio" id = "softwareOption">portfolio</a></li>
+							<li class = "list-inline-item  aboutItem" id = "musicLi" ><a href = "#photography" id = "photographyOption">photography</a></li>
 
-							<li class = "list-inline-item aboutItem" ><a href = "#contact" id = "contactOption">Contact</a>
+							<li class = "list-inline-item aboutItem" ><a href = "#contact" id = "contactOption">contact</a>
 								
 							</li>
 
@@ -217,7 +224,7 @@
 			</div>
 		</div> 
 
-		<div class = "row  justify-content-center" style = "margin-bottom: 120px">
+		<div class = "row  justify-content-center" style = "margin-bottom: 60px">
 			<div data-aos="fade-right"
 				 data-aos-delay="400" 
 				 data-aos-duration="800" class = "col-lg-5 no_padding">
@@ -238,6 +245,14 @@
 					<p class = "projectDesc" >A voice controlled extension for the imaging tool 3D Slicer, an application that displays MRI and CT scans in a 3D viewer for image-guided surgical procedures. Developed in collaboration with Professor Junichi Tokuda during the BU RISE program.</p>	
 					<p class = "technologies" >Python    PyQt    SpeechRecognition</p>
 			</div>
+		</div>
+		<div class = "row justify-content-center">
+			
+			<div class = "col-lg-6 col-md-6 col-sm-6" style = "text-align: center">
+				<h3 style = "color: #DB4437">Other Projects</h3>
+					<a href = "https://github.com/lithafnium"><button style = "background-color: #DB4437" type="button" class="btn btn-danger">Github</button></a>
+			</div>
+
 		</div>
 	</div>
 
@@ -354,8 +369,19 @@
 			about.classList.remove("active"); 
 			contact.classList.add("contactActive"); 
 			contact.classList.add("active"); 
-
 		}
+
+		function showHamburger(){
+			console.log(this.scrollY); 
+			let hamburger = document.getElementById("menu"); 
+			console.log(hamburger); 
+			let scrollHeight = window.innerHeight - 200; 
+
+			console.log(scrollHeight); 
+
+			this.scrollY > scrollHeight ? hamburger.style.left = "20px" : hamburger.style.left = "-270px"; 
+		}
+		window.addEventListener("scroll", showHamburger, false); 
 	</script>
   
 

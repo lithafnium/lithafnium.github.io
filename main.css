@@ -26,6 +26,37 @@ html, body{
   align-items: center;   /* <---- NEW    */
   
 }
+.sidenav p{
+	top: 0; 
+	left: 0;
+}
+
+.navsign{
+	height: 100%;
+	position: fixed;
+	top: 0; 
+	left: -270px; 
+	z-index: 3;
+	overflow-x: hidden;
+	display: flex;
+  	align-items: center;   
+  	transition: 0.3s;
+}
+
+.hamburger{
+	transition: 0.3s;
+}
+.bar{
+	width: 25px;
+  	height: 2px;
+  	background-color: rgba(0, 0, 0, 0.7);
+  	margin: 6px 0;
+  	transition: 0.3s;
+}
+
+.navWrapper:hover .navsign{
+	transform: translateX(-300px);
+}
 
 .navWrapper:hover .aboutNav{
 	transition-property: transform;
