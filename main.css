@@ -24,11 +24,14 @@ html, body{
 
   display: flex;
   align-items: center;   /* <---- NEW    */
+
+
+
   
 }
-.sidenav p{
-	top: 0; 
-	left: 0;
+
+.sidenav a{
+
 }
 
 .navsign{
@@ -356,6 +359,10 @@ a:hover{
 	padding-top: 15px;
 	white-space: pre; 
 	color:#DB4437;
+}
+
+.other button{
+	background-color: #DB4437; 
 }
 
 /*PHOTOGRAPHY=========*/
