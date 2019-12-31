@@ -3,6 +3,66 @@ html, body{
 /*	background-color: rgb(10, 25, 47)
 */}
 
+
+/*MOBILE=======*/
+
+@media (max-width: 991.98px) {
+	.navWrapper{
+		display: none;
+	}
+
+	.sidenav{
+		display: none;
+	}
+	.negative-margin{
+		margin-left: 0px !important;
+	}
+
+	.negative-desc-margin-left{
+		margin-left: 0px !important;
+	}
+
+	.negative-desc-margin-right{
+		margin-right: 0px !important;
+	}
+
+	.zero-padding{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+
+
+
+
+}
+
+/*MISC=======*/
+.invisible{
+	opacity: 0; 
+}
+
+.visible{
+	opacity: 1; 
+}
+
+/*COLORS========*/ 
+.blue{
+	color:#4285F4 !important;
+}
+
+.red{
+	color: #DB4437 !important;
+}
+
+.yellow{
+	color: #F4B400 !important;
+}
+
+.green{
+	color: #0F9D58 !important;
+}
+
 /*NAVBAR=========*/
 .navWrapper{
 	height: 100%;
@@ -28,10 +88,6 @@ html, body{
 
 
   
-}
-
-.sidenav a{
-
 }
 
 .navsign{
@@ -156,6 +212,15 @@ html, body{
 }
 
 
+.topBar{
+	box-shadow: rgba(2, 12, 27, 0.05) 0px 10px 20px 0px;
+	background-color: #FAFAFA !important;
+	top: 0; 
+	transition: 0.3s;
+	width: 100% !important;
+}
+
+
 h1{
 	font-weight: lighter !important;
 	font-size: 5rem;
@@ -252,9 +317,9 @@ a:hover{
 }
 
 
-#about{
+/*#about{
 	padding: 0px !important;
-}
+}*/
 
 /*PORTFOLIO=========*/
 
@@ -286,9 +351,9 @@ a:hover{
 }
 
 
-.zero-padding{
+/*.zero-padding{
 	padding: 0px !important;
-}
+}*/
 
 .divLink{
 	position:absolute; 
@@ -327,11 +392,11 @@ a:hover{
 
 }
 
-.no_padding{
+/*.no_padding{
 	padding: 0px !important;
 	margin: 0px;
 }
-
+*/
 .overlay h4{
 
 	font-size: 1em !important;
@@ -363,6 +428,14 @@ a:hover{
 
 .other button{
 	background-color: #DB4437; 
+}
+
+.negative-desc-margin-left{
+	margin-left: -80px;
+}
+
+.negative-desc-margin-right{
+	margin-right: -80px;
 }
 
 /*PHOTOGRAPHY=========*/
