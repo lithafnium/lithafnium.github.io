@@ -30,11 +30,11 @@ html, body{
 		padding-left: 15px !important;
 		padding-right: 15px !important;
 	}
-	.no_padding{
+	/*.no_padding{
 		padding: 15px !important;
 		margin: 15px !important;
 	}
-
+*/
 
 
 
@@ -422,6 +422,7 @@ a:hover{
 	background-color: #FAFAFA; 
 	border-radius: 2px;
 	box-shadow: rgba(2, 12, 27, 0.4) 0px 20px 30px -15px;
+	z-index: 100;
 }
 
 .technologies{
